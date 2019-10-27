@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript examples</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="scriptsexternal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      div {
+        margin: 3%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2>Javascript tutorial</h2>
+      <p id="demo">My name is Sabin</p>
+
+      <button type="button" class="btn btn-success" onclick="myFunc()">
+        Click me
+      </button>
+    </div>
+    <script>
+      var names = ["Sabin", "Samita", "Anjan"];
+      document.getElementById("demo1").innerHTML = typeof names;
+    </script>
+    <script>
+      var person = { firstName: "sabin", lastName: "gautam" };
+      document.getElementById("demo2").innerHTML =
+        person.firstName + " " + person.lastName;
+    </script>
+    <script>
+      function myFunction(a, b) {
+        return a * b;
+      }
+      var x = myFunction(4, 3);
+      console.log(x);
+      document.getElementById("demos").innerHTML = "The number is: " + x;
+    </script>
+    <script>
+      function toCelsius(f) {
+        return (5 / 9) * (f - 32);
+      }
+      document.getElementById("demon").innerHTML = toCelsius(77);
+    </script>
+    <script>
+      var person1 = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullname: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      document.getElementById("demso").innerHTML = person1.fullname() + "<br>";
+    </script>
+    <script>
+      var x = "s,a,b,i,n,d,o";
+      var spl = x.split(",");
+      console.log(spl);
+      var txt = " ";
+      for (var i = 0; i < spl.length; i++) {
+        txt += spl[i] + "<br> ";
+      }
+      document.getElementById("demosd").innerHTML = txt;
+    </script>
+  </body>
+  <script>
+    var x = "Sabin";
+    // var t = Number(x);
+    var t = parseInt(x);
+    var dt = Number(new Date("2019-10-27"));
+
+    var y = x.toString();
+    var aa = Number.MIN_VALUE;
+    var z = typeof t;
+    console.log(aa);
+  </script>
+  <script>
+    var myCars = ["tesla1", "honda1", "toyota"];
+    var fun = function myFunction() {
+      return "ola";
+    };
+    var myArr = new Array(3);
+    myArr[0] = "hello";
+    myArr[1] = fun();
+    myArr[2] = myCars;
+
+    var txt = "<ul>";
+    // for (var i = 0; i < myArr.length; i++) {
+    //   txt += "<li>" + myArr[i] + "</li>";
+    // }
+    var kk = myArr.forEach(newfunc);
+
+    txt += "</ul>";
+    document.getElementById("demodef").innerHTML = txt;
+    function newfunc(value) {
+      txt += "<li>" + value + "</li>";
+    }
+  </script>
+  <script>
+    var numbers1 = [45, 200, 3, 42, 37];
+    var numbers2 = numbers1.reduce(myadd);
+    document.getElementById("demo").innerHTML = numbers2;
+    function myadd(a, b) {
+      return a + b;
+    }
+  </script>
+</html>

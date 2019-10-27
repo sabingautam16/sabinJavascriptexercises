@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Bootstrap Example</title>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-              </head>
-<body>
-<h2> Javascript tutorial</h2>
-<p id="demo"></p>
-<button type = "button" class= "btn btn-danger" onclick="document.getElementById('demo').innerHTML=Date()">Click me</button>
-
-
-
-</body>
-</html> 
+  <head>
+    <title>Javascript examples</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      div {
+        margin: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Javascript tutorial</h2>
+      <p id="demo">My name is Sabin</p>
+      <p id="demo1" style='display: none'>My name is Sabin</p>
+      <button
+        type="button"
+        class="btn btn-danger"
+        onclick="document.getElementById('demo').innerHTML=Date()"
+      >
+        Click me
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        onclick="document.getElementById('mylight').src='static/glowinglight.jfif'"
+      >
+        Turn on
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger"
+        onclick="document.getElementById('mylight').src='static/Non-glowinglight.jfif'"
+      >
+        Turn off
+      </button>
+      <img id="mylight" src="static/Non-glowinglight.jfif" />
+      <button
+        type="button"
+        class="btn btn-default"
+        onclick="document.getElementById('demo').style.display='none'"
+      >
+        Disappear
+      </button>
+      <button
+        type="button"
+        class="btn btn-default"
+        onclick="document.getElementById('demo1').style.display='block'"
+      >
+        Appear
+      </button>
+    </div>
+  </body>
+</html>

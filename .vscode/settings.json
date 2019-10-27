@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.autoSave": "onWindowChange",
+    "editor.highlightActiveIndentGuide": false,
+    "editor.formatOnSave": true
+}
